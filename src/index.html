@@ -2,12 +2,66 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>My First Parcel App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portada</title>
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="app.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito&family=Open+Sans&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <include src="header.html"></include>
-    <h1>Hello, UOC!</h1>
+    <header>
+      <img src="images/banner.png" alt="Banner de Stranger Things" />
+      <h1>Explora el mundo de Stranger Things</h1>
+      <p>
+        Una aventura llena de misterio, ciencia ficción y nostalgia de los años
+        80.
+      </p>
+    </header>
+
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="categoria.html">Categoría</a></li>
+        <li><a href="presentacion.html">Presentación</a></li>
+        <li><a href="enlaces.html">Enlaces</a></li>
+      </ul>
+    </nav>
+
+    <section class="descripcion">
+      <div>
+        <p>
+          "Stranger Things" es una serie de ciencia ficción y terror ambientada
+          en los años 80 en el ficticio pueblo de Hawkins, Indiana. La trama
+          gira en torno a un grupo de niños que se encuentran con fenómenos
+          sobrenaturales, incluyendo la desaparición de su amigo Will Byers.
+          Mientras buscan respuestas, descubren a una niña con habilidades
+          telequinéticas llamada Eleven, y se enfrentan a un mundo alterno
+          conocido como el Mundo del Revés. La serie captura la esencia
+          nostálgica de la cultura de los 80, fusionando el suspense con
+          elementos paranormales. Destaca por su excepcional elenco, que incluye
+          a Winona Ryder, David Harbour y un talentoso grupo de jóvenes actores,
+          creando una experiencia emocionante y llena de misterio que ha
+          cautivado a audiencias en todo el mundo.
+        </p>
+      </div>
+    </section>
+
+    <div class="imagen-portada">
+      <img src="images/stportada1.jpg" alt="Stranger Things" />
+    </div>
+
+    <section class="conoce-mas">
+      <article>
+        <h2>Conoce más</h2>
+        <p>Descubre información detallada y curiosidades sobre la serie.</p>
+        <a href="presentacion.html" class="boton">Ir a la presentación</a>
+      </article>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Stranger Things</p>
+    </footer>
   </body>
 </html>
