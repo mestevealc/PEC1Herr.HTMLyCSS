@@ -46,57 +46,38 @@ nav.menu a {
   font-size: 16px;
 }
 
-.descripcion {
-  max-width: 700px;
-  margin: 10px auto;
-  padding: 20px;
-  text-align: justify;
-  line-height: 1.6;
-}
-
-.imagen-portada {
-  max-width: 700px;
-  margin-top: 20px;
-  margin: 10px auto;
-  margin-bottom: 50px;
-}
-
-.imagen-portada img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 8px;
-}
-
-.conoce-mas {
+.contenido-categoria {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 20px;
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
+.elemento {
+  flex: 0 1 calc(100% - 20px);
+  max-width: 500px;
+  margin: 20px;
   padding: 30px;
-  line-height: 0.5;
+  background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.lista-actores {
+  list-style-type: none;
+  padding: 0;
 }
 
 .boton {
   display: inline-block;
-  padding: 20px 30px;
+  padding: 10px;
   margin: auto;
   margin-top: 30px;
   text-decoration: none;
   background-color: #5a0286;
   color: #fff;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.boton:hover {
-  background-color: #5d3b6e;
+  /* transition: background-color 0.3s ease; */
 }
 
 footer {
