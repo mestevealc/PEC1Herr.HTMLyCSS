@@ -78,7 +78,7 @@ article {
   flex-direction: column;
   background-color: #fff;
   padding: 30px;
-  line-height: 0.5;
+  line-height: 1.5;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
