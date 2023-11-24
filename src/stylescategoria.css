@@ -47,6 +47,17 @@ nav.menu a {
   position: relative;
 }
 
+@media screen and (max-width: 600px) {
+  nav.menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.menu li {
+    display: block;
+  }
+}
+
 .contenido-categoria {
   display: flex;
   flex-wrap: wrap;

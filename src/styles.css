@@ -30,7 +30,7 @@ nav.menu ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 nav.menu li {
@@ -45,6 +45,17 @@ nav.menu a {
   letter-spacing: 0.15em;
   display: block;
   position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  nav.menu ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.menu li {
+    display: block;
+  }
 }
 
 .descripcion {
