@@ -35,7 +35,6 @@ nav.menu ul {
 
 nav.menu li {
   display: table-cell;
-  position: relative;
   padding: 10px;
 }
 
@@ -44,8 +43,7 @@ nav.menu a {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
-  display: inline-block;
-  padding: 5px 20px;
+  display: block;
   position: relative;
 }
 
