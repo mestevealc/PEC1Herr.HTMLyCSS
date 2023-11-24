@@ -61,8 +61,8 @@ nav.menu a {
 
 .descripcion img {
   display: block;
-  max-width: 60%;
-  max-height: 60%;
+  max-width: 500px;
+  max-height: 500px;
   border-radius: 8px;
   margin: 30px auto;
 }

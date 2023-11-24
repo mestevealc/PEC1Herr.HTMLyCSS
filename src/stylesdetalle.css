@@ -53,14 +53,14 @@ nav.menu a {
 }
 
 .detalle-actor {
-  flex: 0 1 calc(33.33% - 20px);
-  max-width: 400px;
-  margin: 20px;
-  padding: 20px;
+  flex: 0 1 calc(40% - 20px);
+  min-width: 300px;
+  margin: 10px;
+  padding: 40px;
+  text-align: center;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
 }
 
 .detalle-actor img {
@@ -77,14 +77,18 @@ nav.menu a {
   list-style-type: none;
 }
 
+.contenido-detalle-anecdotas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .intro {
-  flex: 0 1 calc(100% - 20px);
-  max-width: 100%;
-  margin: 20px;
-  padding: 30px;
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 20px;
   text-align: justify;
-  margin-left: 200px;
-  margin-right: 200px;
+  line-height: 1.6;
 }
 
 .intro h2 {
@@ -92,21 +96,15 @@ nav.menu a {
   color: #5a0286;
 }
 
-.contenido-detalle-anecdotas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
 .detalle-anecdotas {
   flex: 0 1 calc(40% - 20px);
-  max-width: 800px;
-  margin: 20px;
-  padding: 20px;
+  min-width: 300px;
+  margin: 10px;
+  padding: 40px;
+  text-align: left;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: left;
 }
 
 .detalle-anecdotas h2 {
@@ -140,12 +138,10 @@ nav.menu a {
 }
 
 .detalle-anecdotas-img img {
-  max-width: 30%;
-  max-height: 30%;
+  max-width: 500px;
+  max-height: 500px;
   border-radius: 8px;
-  margin-top: 20px;
-  margin: 20px 20px;
-  margin-bottom: 15px;
+  margin: 15px;
 }
 
 .listado {
