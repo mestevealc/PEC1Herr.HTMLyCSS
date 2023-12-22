@@ -58,6 +58,15 @@ nav.menu a {
   }
 }
 
+nav.menu ul li a:hover {
+  color: #dc111184;
+}
+
+nav.menu ul li.active a {
+  color: #dc1111;
+  border-bottom: 1px solid #dc1111;
+}
+
 .contenido-presentacion h2 {
   text-align: center;
   color: #5a0286;
@@ -148,4 +157,9 @@ nav.paginas-footer a {
   nav.paginas-footer li {
     display: block;
   }
+}
+
+footer img {
+  width: 50em;
+  height: auto;
 }

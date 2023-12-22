@@ -269,3 +269,8 @@ nav.paginas-footer a {
     display: block;
   }
 }
+
+footer img {
+  width: 50em;
+  height: auto;
+}
