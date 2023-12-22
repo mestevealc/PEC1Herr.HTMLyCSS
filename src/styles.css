@@ -12,6 +12,11 @@ header {
   font-family: "Abril Fatface", serif;
   background: linear-gradient(to bottom, #270035, #b10909);
 }
+.header-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
 img {
   clip-path: ellipse(50% 47% at 50% 50%);
@@ -157,7 +162,7 @@ nav.paginas-footer a {
 }
 
 footer img {
-  max-width: 50%;
+  max-width: 70%;
   height: auto;
   object-fit: cover;
 }

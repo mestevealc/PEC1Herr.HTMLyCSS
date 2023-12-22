@@ -271,6 +271,7 @@ nav.paginas-footer a {
 }
 
 footer img {
-  width: 50em;
+  max-width: 70%;
   height: auto;
+  object-fit: cover;
 }
