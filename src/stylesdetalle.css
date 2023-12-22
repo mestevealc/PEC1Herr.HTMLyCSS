@@ -73,6 +73,10 @@ nav.menu a {
   }
 }
 
+nav.menu ul li a:hover {
+  color: #dc111184;
+}
+
 .contenido-detalle-actores {
   display: flex;
   flex-wrap: wrap;
