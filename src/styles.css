@@ -13,11 +13,6 @@ header {
   background: linear-gradient(to bottom, #270035, #b10909);
 }
 
-header img {
-  max-width: 100%;
-  height: auto;
-}
-
 img {
   clip-path: ellipse(50% 47% at 50% 50%);
   max-width: 100%;
@@ -162,7 +157,7 @@ nav.paginas-footer a {
 }
 
 footer img {
-  max-width: 50em;
+  max-width: 50%;
   height: auto;
-  justify-content: center;
+  object-fit: cover;
 }
