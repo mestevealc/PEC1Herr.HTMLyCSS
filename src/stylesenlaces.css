@@ -78,3 +78,34 @@ footer {
   width: 100%;
   height: 50%;
 }
+
+nav.paginas-footer {
+  padding: 0.5em;
+  text-align: center;
+}
+
+nav.paginas-footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav.paginas-footer a {
+  color: #fff;
+  letter-spacing: 0.15em;
+  display: block;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  nav.paginas-footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav.paginas-footer li {
+    display: block;
+  }
+}
