@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de categoría del portal de Stranger Things"
+    />
     <title>Categoría</title>
     <link rel="stylesheet" href="stylescategoria.css" />
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito&family=Open+Sans&family=Work+Sans&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
   </head>
@@ -61,14 +67,14 @@
           <li>
             <strong>Matthew Modine</strong> - Interpreta a Martin Brenner.
           </li>
-          <div class="imagen-destacada">
-            <img
-              src="images/reparto.jpg"
-              alt="Foto conjunta del reparto"
-              loading="lazy"
-            />
-          </div>
         </ul>
+        <div class="imagen-destacada">
+          <img
+            src="images/reparto.webp"
+            alt="Foto conjunta del reparto"
+            loading="lazy"
+          />
+        </div>
 
         <a href="detalleActores.html" class="boton">Leer más</a>
       </section>
@@ -100,15 +106,39 @@
           significativamente a la identidad de la serie.
         </p>
 
-        <iframe
-          class="video"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/videoseries?si=vsC22X0uwKnG4VzR&amp;list=OLAK5uy_n-I1879r8aI-xpK0XefuLVdub9nsrA9Bs"
-          title="YouTube video player"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+        <figure class="video-container" onclick="loadVideo()">
+          <img
+            src="images/vistaPreviaBSO.webp"
+            alt="Vista previa del video"
+            class="video-preview"
+          />
+
+          <div id="video-container"></div>
+        </figure>
+
+        <script>
+          function loadVideo() {
+            var videoContainer = document.getElementById("video-container");
+
+            var videoPreview = document.querySelector(".video-preview");
+            videoPreview.style.display = "none";
+
+            if (!videoContainer.classList.contains("video-loaded")) {
+              var iframe = document.createElement("iframe");
+              iframe.className = "video";
+              iframe.width = "560";
+              iframe.height = "315";
+              iframe.src =
+                "https://www.youtube.com/embed/videoseries?si=vsC22X0uwKnG4VzR&amp;list=OLAK5uy_n-I1879r8aI-xpK0XefuLVdub9nsrA9Bs";
+              iframe.title = "YouTube video player";
+              iframe.allowfullscreen = true;
+
+              videoContainer.appendChild(iframe);
+
+              videoContainer.classList.add("video-loaded");
+            }
+          }
+        </script>
       </section>
     </main>
 
