@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de detalle anecdota del portal de Stranger Things"
+    />
     <title>Detalle de anécdotas</title>
     <link rel="stylesheet" href="stylesdetalle.css" />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito&family=Open+Sans&family=Work+Sans&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
   </head>
@@ -109,17 +115,17 @@
               para mantener la coherencia en la serie.
             </p>
           </li>
-          <img src="images/demogorgon.jpg" alt="Demogorgon" loading="lazy" />
-          <iframe
-            class="gif"
-            src="https://giphy.com/embed/axdUGyhEPyZ2hwMtaa"
-            width="480"
-            height="270"
-            frameborder="0"
-            class="giphy-embed"
-            allowfullscreen
-          ></iframe>
         </ul>
+        <img src="images/demogorgon.jpg" alt="Demogorgon" loading="lazy" />
+        <iframe
+          class="gif"
+          src="https://giphy.com/embed/axdUGyhEPyZ2hwMtaa"
+          width="480"
+          height="270"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
       </section>
 
       <section class="detalle-anecdotas">
@@ -165,12 +171,12 @@
               más escenas juntos.
             </p>
           </li>
-          <img
-            src="images/amistad.jpg"
-            alt="Noah Schnapp y Millie Bobby Brown"
-            loading="lazy"
-          />
         </ul>
+        <img
+          src="images/amistad.jpg"
+          alt="Noah Schnapp y Millie Bobby Brown"
+          loading="lazy"
+        />
       </section>
     </main>
 
