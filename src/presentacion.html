@@ -3,11 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de presentación del portal de Stranger Things"
+    />
     <title>Presentación</title>
     <link rel="stylesheet" href="stylespresentacion.css" />
     <link
+      rel="preload"
       href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito&family=Open+Sans&family=Work+Sans&display=swap"
-      rel="stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
     <link rel="icon" href="images/favicon.png" type="image/x-icon" />
   </head>
@@ -110,15 +116,39 @@
 
       <section class="elemento-multimedia">
         <h2>Tráiler oficial</h2>
-        <iframe
-          class="video"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/b9EkMc79ZSU?si=TAYlj4cMkmywoVmX"
-          title="YouTube video player"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
+        <figure class="video-container" onclick="loadVideo()">
+          <img
+            src="images/vistaPreviaTrailer.png"
+            alt="Vista previa del video"
+            class="video-preview"
+          />
+
+          <div id="video-container"></div>
+        </figure>
+
+        <script>
+          function loadVideo() {
+            var videoContainer = document.getElementById("video-container");
+
+            var videoPreview = document.querySelector(".video-preview");
+            videoPreview.style.display = "none";
+
+            if (!videoContainer.classList.contains("video-loaded")) {
+              var iframe = document.createElement("iframe");
+              iframe.className = "video";
+              iframe.width = "560";
+              iframe.height = "315";
+              iframe.src =
+                "https://www.youtube.com/embed/b9EkMc79ZSU?si=TAYlj4cMkmywoVmX";
+              iframe.title = "YouTube video player";
+              iframe.allowfullscreen = true;
+
+              videoContainer.appendChild(iframe);
+
+              videoContainer.classList.add("video-loaded");
+            }
+          }
+        </script>
       </section>
 
       <section class="descripcion">
